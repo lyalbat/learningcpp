@@ -5,7 +5,9 @@ bool check_valid_card(string card_number);
 int sum_even_digits(int even_digit);
 
 int main() {
-    string card_number = "79927398713";
+    string card_number;
+    std::cout << "Enter your credit card number: " << '\n';
+    std::cin >> card_number;
     std::cout << "This is your credit card: " << card_number << '\n';
     const bool isValidNumber = check_valid_card(card_number);
     if(isValidNumber){
